@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdelaziz Yahya — Links</title>
+<!-- ============================================================
+     HOW TO EDIT THIS FILE (only 3 things to change):
+     1. Replace "Your Name" (appears in <title> above and in the <h1> below)
+     2. Replace the initials "YN" in the avatar circle
+     3. Replace the href="" links in the LINKS section below
+        - WhatsApp: use https://wa.me/ + full number with country code,
+          no plus sign, no spaces. Example: https://wa.me/923001234567
+        - Email: keep the mailto: prefix. Example: mailto:me@gmail.com
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F2F4F8;
+    --card:#FFFFFF;
+    --ink:#16181D;
+    --muted:#6B7280;
+    --ring-a:#F58529; /* warm orange */
+    --ring-b:#DD2A7B; /* magenta */
+    --ring-c:#8134AF; /* violet */
+    --ring-d:#515BD4; /* indigo */
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:48px 20px 64px;
+  }
+  .card-col{width:100%;max-width:420px}
+
+  /* ---- header ---- */
+  .avatar-wrap{
+    width:112px;height:112px;margin:0 auto 20px;
+    border-radius:50%;
+    padding:4px;
+    background:conic-gradient(from 210deg,var(--ring-a),var(--ring-b),var(--ring-c),var(--ring-d),var(--ring-a));
+    animation:ring-in .9s cubic-bezier(.2,.8,.2,1) both;
+  }
+  @keyframes ring-in{from{transform:scale(.7) rotate(-40deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+  .avatar{
+    width:100%;height:100%;border-radius:50%;
+    background:var(--ink);
+    border:4px solid var(--bg);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Sora',sans-serif;font-weight:700;font-size:34px;color:#fff;
+    letter-spacing:1px;
+  }
+  h1{
+    font-family:'Sora',sans-serif;font-weight:700;font-size:26px;
+    text-align:center;letter-spacing:-0.02em;
+  }
+  .tagline{
+    text-align:center;color:var(--muted);font-size:15px;
+    margin-top:6px;margin-bottom:32px;
+  }
+
+  /* ---- links ---- */
+  .links{display:flex;flex-direction:column;gap:14px}
+  .link{
+    display:flex;align-items:center;gap:14px;
+    background:var(--card);
+    border-radius:16px;
+    padding:16px 18px;
+    text-decoration:none;color:var(--ink);
+    font-weight:600;font-size:16px;
+    box-shadow:0 1px 2px rgba(22,24,29,.06),0 4px 14px rgba(22,24,29,.05);
+    border-left:5px solid var(--accent);
+    transition:transform .15s ease, box-shadow .15s ease;
+    animation:rise .5s ease both;
+  }
+  .link:nth-child(1){animation-delay:.05s}
+  .link:nth-child(2){animation-delay:.12s}
+  .link:nth-child(3){animation-delay:.19s}
+  .link:nth-child(4){animation-delay:.26s}
+  .link:nth-child(5){animation-delay:.33s}
+  .link:nth-child(6){animation-delay:.40s}
+  .link:nth-child(7){animation-delay:.47s}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .link:hover,.link:focus-visible{
+    transform:translateY(-2px);
+    box-shadow:0 2px 4px rgba(22,24,29,.08),0 10px 24px rgba(22,24,29,.10);
+  }
+  .link:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .link svg{width:26px;height:26px;flex-shrink:0;fill:var(--accent)}
+  .link .go{margin-left:auto;color:var(--muted);font-weight:400;font-size:18px}
+
+  .fb{--accent:#1877F2}
+  .ig{--accent:#DD2A7B}
+  .tt{--accent:#16181D}
+  .wa{--accent:#25D366}
+  .em{--accent:#8134AF}
+  .sc{--accent:#E8C200}
+  .xx{--accent:#16181D}
+
+  footer{
+    text-align:center;margin-top:36px;color:var(--muted);font-size:13px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .avatar-wrap,.link{animation:none}
+    .link{transition:none}
+  }
+</style>
+</head>
+<body>
+<main class="card-col">
+
+  <div class="avatar-wrap">
+    <div class="avatar">AY</div>
+  </div>
+  <h1>Abdelaziz Yahya</h1>
+  <p class="tagline">All my accounts in one place — tap any card</p>
+
+  <!-- ==================== LINKS — EDIT THE href VALUES ==================== -->
+  <nav class="links">
+
+    <a class="link fb" href="https://www.facebook.com/abdelazizyahyaa" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+      Facebook
+      <span class="go">›</span>
+    </a>
+
+    <a class="link ig" href="https://www.instagram.com/_xooz_?igsh=M210ZXZoZXRvNXk1&amp;utm_source=qr" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.7.3-.4.2-.7.4-1 .7-.3.3-.5.6-.7 1-.1.2-.2.6-.3 1.7-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.7.2.4.4.7.7 1 .3.3.6.5 1 .7.2.1.6.2 1.7.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.7-.3.4-.2.7-.4 1-.7.3-.3.5-.6.7-1 .1-.2.2-.6.3-1.7.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.7-.2-.4-.4-.7-.7-1-.3-.3-.6-.5-1-.7-.2-.1-.6-.2-1.7-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.1a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 8.2a3.2 3.2 0 1 0 0-6.5 3.2 3.2 0 0 0 0 6.5zm6.4-8.4a1.2 1.2 0 1 1-2.3 0 1.2 1.2 0 0 1 2.3 0z"/></svg>
+      Instagram
+      <span class="go">›</span>
+    </a>
+
+    <a class="link tt" href="https://vt.tiktok.com/ZSXRcV5V1/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M19.6 6.7a5 5 0 0 1-3.6-1.6 5 5 0 0 1-1.2-2.4h-3.1v12.6a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.4a6.2 6.2 0 0 0-.9-.1 6 6 0 1 0 6 6V9.9a8 8 0 0 0 4.8 1.6V8.4c-.7 0-1.4-.1-2-.4v-1.3z"/></svg>
+      TikTok
+      <span class="go">›</span>
+    </a>
+
+    <a class="link wa" href="https://wa.me/971567445507" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.2-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+      WhatsApp
+      <span class="go">›</span>
+    </a>
+
+    <a class="link em" href="https://mail.google.com/mail/?view=cm&amp;to=Abazizyehya44@gmail.com" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Email
+      <span class="go">›</span>
+    </a>
+
+    <a class="link sc" href="https://snapchat.com/t/RJGzqP5Q" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2.4c2.9 0 5.2 2.3 5.3 5.2 0 .6 0 1.2-.1 1.8 0 .2.1.3.3.3.2 0 .5-.1.8-.2.1 0 .2-.1.3-.1.5 0 .9.3 1 .7.1.5-.3.9-.9 1.2-.2.1-.4.2-.6.2-.4.2-.9.3-1.1.8-.1.3 0 .6.2 1 .1.1 1.2 2.5 3.6 2.9.2 0 .3.2.3.4 0 .1 0 .2-.1.3-.3.6-1.4.9-2.5 1.1-.1 0-.2.1-.2.2-.1.2-.1.4-.2.6-.1.2-.2.4-.5.4h-.1c-.2 0-.5-.1-.9-.1-.3 0-.6 0-.9.1-.6.1-1.2.5-1.9 1-.9.7-1.5.9-1.8.9s-.9-.2-1.8-.9c-.7-.5-1.3-.9-1.9-1-.3-.1-.6-.1-.9-.1-.4 0-.7.1-.9.1h-.1c-.3 0-.4-.2-.5-.4-.1-.2-.1-.4-.2-.6 0-.1-.1-.2-.2-.2-1.1-.2-2.2-.5-2.5-1.1-.1-.1-.1-.2-.1-.3 0-.2.1-.4.3-.4 2.4-.4 3.5-2.8 3.6-2.9.2-.4.3-.7.2-1-.2-.5-.7-.6-1.1-.8-.2 0-.4-.1-.6-.2-.6-.3-1-.7-.9-1.2.1-.4.5-.7 1-.7.1 0 .2 0 .3.1.3.1.6.2.8.2.2 0 .3-.1.3-.3-.1-.6-.1-1.2-.1-1.8.1-2.9 2.4-5.2 5.3-5.2z"/></svg>
+      Snapchat
+      <span class="go">›</span>
+    </a>
+
+    <a class="link xx" href="https://x.com/_xooz__?s=11" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L2 2h6.4l4.4 5.9L18.9 2zm-1.1 18.1h1.7L7.5 3.8H5.7l12.1 16.3z"/></svg>
+      X (Twitter)
+      <span class="go">›</span>
+    </a>
+
+  </nav>
+  <!-- ====================================================================== -->
+
+  <footer>Scan once, always up to date.</footer>
+</main>
+</body>
+</html>
